@@ -34,7 +34,7 @@ def try_login(username, password, domain, lmhash, nthash, target, results, port)
 
 
 def parseArgs():
-    print("Sprayer v1.1 - by @podalirius_\n")
+    print("Sprayer v0.9.1 - by @podalirius_\n")
 
     parser = argparse.ArgumentParser(description="Multithreaded spraying of a password on all accounts of a domain")
     parser.add_argument("-v", "--verbose", default=False, action="store_true", help='Verbose mode. (default: False)')

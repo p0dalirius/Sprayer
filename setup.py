@@ -13,7 +13,7 @@ with open('requirements.txt', 'r', encoding='utf-8') as f:
 
 setuptools.setup(
     name="sprayer",
-    version="0.9",
+    version="0.9.1",
     description="",
     url="https://github.com/p0dalirius/Sprayer",
     author="Podalirius",
