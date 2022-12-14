@@ -59,3 +59,5 @@ Credentials:
 ```
 ./Sprayer.py -u 'Administrator' -p 'Admin123!' -d 'COERCE.local' --dc-ip 192.168.1.46 -sp 'Admin123!'
 ```
+
+https://user-images.githubusercontent.com/79218792/207589885-d934f431-265b-40bf-9c9f-31a3b12bb089.mp4
