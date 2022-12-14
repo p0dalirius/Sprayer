@@ -83,7 +83,8 @@ def main():
     if options.output_hashes:
         f = open(options.output_hashes, 'w')
         for username, password in results.items():
-            f.write("%s:aad3b435b51404eeaad3b435b51404ee:%s:%s" % (username, nt_hash(password), password))
+            f.write("%s:aad3b435b51404eeaad3b435b51404ee:%s:%s\n" % (username, nt_hash(password), password))
+        f.close()
 
     print("[+] Bye Bye!")
 
