@@ -47,15 +47,15 @@ def parseArgs():
     """ % VERSION)
 
     parser = argparse.ArgumentParser(description="Multithreaded spraying of a password on all accounts of a domain")
-    parser.add_argument("-v", "--verbose", default=False, action="store_true", help='Verbose mode. (default: False)')
+    parser.add_argument("-v", "--verbose", default=False, action="store_true", help="Verbose mode. (default: False)")
 
-    parser.add_argument("-oH", "--output-hashes", default=None, required=False, type=str, help='Output hashes to file')
+    parser.add_argument("-oH", "--output-hashes", default=None, required=False, type=str, help="Output hashes to file")
     parser.add_argument("-T", "--threads", default=16, type=int, help="Number of threads (default: 16)")
     parser.add_argument("-P", "--port", default=445, type=int, help="SMB port to connect to (default: 445)")
 
     group = parser.add_mutually_exclusive_group()
-    group.add_argument("-sp", "--spray-password", default=None, type=str, help='Spray this password on all users.')
-    group.add_argument("-su", "--spray-user-as-password", type=bool, default=True, action="store_true", help='Spray user as password.')
+    group.add_argument("-sp", "--spray-password", default=None, type=str, help="Spray this password on all users.")
+    group.add_argument("-su", "--spray-user-as-password", default=True, action="store_true", help="Spray user as password.")
 
     # LDAP
     group_credentials = parser.add_argument_group("LDAP")
