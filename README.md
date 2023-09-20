@@ -1,4 +1,4 @@
-# Sprayer
+![](./.github/banner.png)
 
 <p align="center">
   Multithreaded spraying of a password on all accounts of a domain.

@@ -13,7 +13,7 @@ with open('requirements.txt', 'r', encoding='utf-8') as f:
 
 setuptools.setup(
     name="sprayer",
-    version="0.9.1",
+    version="0.9.2",
     description="",
     url="https://github.com/p0dalirius/Sprayer",
     author="Podalirius",
@@ -32,7 +32,6 @@ setuptools.setup(
     python_requires='>=3.6',
     install_requires=requirements,
     entry_points={
-        'console_scripts': ['sprayer=sprayer.__main__:main'],
-        'console_scripts': ['Sprayer=sprayer.__main__:main']
+        'console_scripts': ['sprayer=sprayer.__main__:main']
     }
 )
