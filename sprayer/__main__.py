@@ -109,7 +109,7 @@ def main():
                 tp.submit(try_login, username, options.spray_password, options.domain, lmhash, nthash, options.dc_ip, results, options.port)
 
     # Spray a username as password
-    elif options.spray_username_as_passwrd is not None:
+    elif options.spray_user_as_password is not None:
         # Waits for all the threads to be completed
         with ThreadPoolExecutor(max_workers=min(options.threads, len(target_accounts))) as tp:
             results = {}
