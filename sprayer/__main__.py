@@ -55,7 +55,7 @@ def parseArgs():
 
     group = parser.add_mutually_exclusive_group()
     group.add_argument("-sp", "--spray-password", default=None, type=str, help='Spray this password on all users.')
-    group.add_argument("-su", "--spray-user-as-password", default=None, type=str, help='Spray user as password.')
+    group.add_argument("-su", "--spray-user-as-password", type=bool, default=True, action="store_true", help='Spray user as password.')
 
     # LDAP
     group_credentials = parser.add_argument_group("LDAP")
