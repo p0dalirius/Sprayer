@@ -54,8 +54,8 @@ def parseArgs():
     parser.add_argument("-P", "--port", default=445, type=int, help="SMB port to connect to (default: 445)")
 
     group = parser.add_mutually_exclusive_group()
-    group.add_argument("-sp", "--spray-password", default=None, required=True, type=str, help='Spray this password on all users.')
-    group.add_argument("-su", "--spray-user-as-password", default=None, required=True, type=str, help='Spray user as password.')
+    group.add_argument("-sp", "--spray-password", default=None, type=str, help='Spray this password on all users.')
+    group.add_argument("-su", "--spray-user-as-password", default=None, type=str, help='Spray user as password.')
 
     # LDAP
     group_credentials = parser.add_argument_group("LDAP")
