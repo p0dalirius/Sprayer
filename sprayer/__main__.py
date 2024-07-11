@@ -49,6 +49,8 @@ def parseArgs():
     parser = argparse.ArgumentParser(description="Multithreaded spraying of a password on all accounts of a domain")
     parser.add_argument("-v", "--verbose", default=False, action="store_true", help="Verbose mode. (default: False)")
 
+    parser.add_argument("--use-ldaps", action="store_true", help="Use LDAPS instead of LDAP")
+
     parser.add_argument("-oH", "--output-hashes", default=None, required=False, type=str, help="Output hashes to file")
     parser.add_argument("-T", "--threads", default=16, type=int, help="Number of threads (default: 16)")
     parser.add_argument("-P", "--port", default=445, type=int, help="SMB port to connect to (default: 445)")
@@ -93,7 +95,8 @@ def main():
         auth_password=options.password,
         auth_hashes=options.hashes,
         query=ldap_query,
-        attributes=["sAMAccountName"]
+        attributes=["sAMAccountName"],
+        use_ldaps=options.use_ldaps
     )
     target_accounts = []
     for cn in results.keys():
