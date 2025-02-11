@@ -20,7 +20,7 @@
 
 ```
 # Sprayer  -h
-Sprayer v0.9.1 - by @podalirius_
+Sprayer v0.9.1 - by Remi GASCOU (Podalirius)
 
 usage: Sprayer [-h] [-v] -sp SPRAY_PASSWORD [-oH OUTPUT_HASHES] [-T THREADS] [-P PORT] [-u USERNAME] [-p PASSWORD]
                [-d DOMAIN] [--hashes [LMHASH]:NTHASH] [--no-pass] [--dc-ip ip address]
